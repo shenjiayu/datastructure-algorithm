@@ -4,6 +4,7 @@ int binarySearch(int c[], int n, int target) {
 	int left = 1, right = n;
     while(left <= right){
         int mid = (left + right)/2;
+        printf("MID: %d, Comparing %d and %d\n", mid, c[mid], target);
         if(c[mid] > target)
             right = mid - 1;
         else if(c[mid] < target)
